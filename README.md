@@ -1,4 +1,4 @@
-# Bot Battlr
+# Recipe-Finder
 This is a projrct about a recipe search app where users can search for recipes by ingredient or meal type, with filters for diet preferences (e.g., vegan, gluten-free).
 
 
