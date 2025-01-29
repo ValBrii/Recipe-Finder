@@ -5,7 +5,7 @@
       "title": "Vegan Pancakes",
       "ingredients": ["flour", "almond milk", "banana"],
       "diet": "vegan",
-      "image": "pancakes.jpg"
+      "image": "pancakes.jpg",
       "recipe": [
         "Mash the banana in a bowl.",
         "Add flour and almond milk, mixing until smooth.",
@@ -19,7 +19,7 @@
       "title": "Grilled Chicken Salad",
       "ingredients": ["grilled chicken", "lettuce", "tomatoes", "cucumber"],
       "diet": "keto",
-      "image": "grilled_chicken_salad.jpg"
+      "image": "grilled_chicken_salad.jpg",
       "recipe": [
         "Grill the chicken until fully cooked, then slice it.",
         "Chop lettuce, tomatoes, and cucumber.",
@@ -32,7 +32,7 @@
       "title": "Avocado Toast",
       "ingredients": ["bread", "avocado", "lemon juice"],
       "diet": "vegan",
-      "image": "avocado_toast.jpg"
+      "image": "avocado_toast.jpg",
       "recipe": [
         "Toast the bread slices until golden brown.",
         "Mash the avocado in a bowl and mix with lemon juice.",
@@ -45,7 +45,7 @@
       "title": "Beef Stir Fry",
       "ingredients": ["beef strips", "soy sauce", "bell peppers"],
       "diet": "high-protein",
-      "image": "beef_stir_fry.jpg"
+      "image": "beef_stir_fry.jpg",
       "recipe": [
         "Heat a pan and cook beef strips until browned.",
         "Add soy sauce and sliced bell peppers.",
@@ -58,7 +58,7 @@
       "title": "Berry Smoothie",
       "ingredients": ["blueberries", "strawberries", "yogurt", "honey"],
       "diet": "vegetarian",
-      "image": "berry_smoothie.jpg"
+      "image": "berry_smoothie.jpg",
       "recipe": [
         "Combine all ingredients in a blender.",
         "Blend until smooth and creamy.",
@@ -70,7 +70,7 @@
       "title": "Vegetable Stir Fry",
       "ingredients": ["broccoli", "carrots", "soy sauce"],
       "diet": "vegan",
-      "image": "vegetable_stir_fry.jpg"
+      "image": "vegetable_stir_fry.jpg",
       "recipe": [
         "Heat a pan with a little oil.",
         "Add chopped broccoli and carrots.",
@@ -83,7 +83,7 @@
       "title": "Egg and Avocado Bowl",
       "ingredients": ["eggs", "avocado", "spinach"],
       "diet": "keto",
-      "image": "egg_avocado_bowl.jpg"
+      "image": "egg_avocado_bowl.jpg",
       "recipe": [
         "Boil or scramble eggs.",
         "Slice avocado and arrange with eggs and spinach in a bowl.",
@@ -95,7 +95,7 @@
       "title": "Spaghetti Bolognese",
       "ingredients": ["spaghetti", "minced beef", "tomato sauce"],
       "diet": "non-vegetarian",
-      "image": "spaghetti_bolognese.jpg"
+      "image": "spaghetti_bolognese.jpg",
       "recipe": [
         "Cook spaghetti according to package instructions.",
         "In a pan, cook minced beef until browned.",
@@ -109,7 +109,7 @@
       "title": "Chickpea Curry",
       "ingredients": ["chickpeas", "coconut milk", "spices"],
       "diet": "vegan",
-      "image": "chickpea_curry.jpg"
+      "image": "chickpea_curry.jpg",
       "recipe": [
         "Sauté spices in a pan.",
         "Add chickpeas and coconut milk.",
@@ -121,7 +121,7 @@
       "title": "Greek Yogurt Parfait",
       "ingredients": ["greek yogurt", "granola", "berries"],
       "diet": "vegetarian",
-      "image": "greek_yogurt_parfait.jpg"
+      "image": "greek_yogurt_parfait.jpg",
       "recipe": [
         "Layer Greek yogurt, granola, and berries in a glass.",
         "Repeat layers until full.",
@@ -133,7 +133,7 @@
       "title": "Quinoa Salad",
       "ingredients": ["quinoa", "cucumbers", "cherry tomatoes", "feta cheese"],
       "diet": "vegetarian",
-      "image": "quinoa_salad.jpg"
+      "image": "quinoa_salad.jpg",
       "recipe": [
         "Cook quinoa according to package instructions. Let it cool",
         "Then mix with chopped cherry tomatoes", "cucumber, and crumbled feta cheese.",
@@ -145,7 +145,7 @@
       "title": "Shakshuka",
       "ingredients": ["eggs", "tomato sauce", "bell peppers"],
       "diet": "vegetarian",
-      "image": "shakshuka.jpg"
+      "image": "shakshuka.jpg",
        "recipe": [
          "Simmer tomato sauce and bell peppers.",
          "Crack the eggs into the sauce and cook until the eggs are done.",
@@ -157,7 +157,7 @@
       "title": "Grilled Salmon",
       "ingredients": ["salmon", "olive oil", "lemon"],
       "diet": "pescatarian",
-      "image": "grilled_salmon.jpg"
+      "image": "grilled_salmon.jpg",
       "recipe": [
         "Season salmon with olive oil and lemon.",
         "Grill for a few minutes on each side.",
@@ -169,7 +169,7 @@
       "title": "Caprese Salad",
       "ingredients": ["mozzarella", "tomatoes", "basil", "balsamic glaze"],
       "diet": "vegetarian",
-      "image": "caprese_salad.jpg"
+      "image": "caprese_salad.jpg",
       "recipe": [
         "Slice mozzarella and tomatoes.",
         "Layer with basil leaves.",
@@ -181,7 +181,7 @@
       "title": "Lentil Soup",
       "ingredients": ["lentils", "carrots", "celery", "spices"],
       "diet": "vegan",
-      "image": "lentil_soup.jpg"
+      "image": "lentil_soup.jpg",
        "recipe": [
         "Sauté onions and carrots.",
         "Add lentils, spices, and water.",
@@ -193,7 +193,7 @@
       "title": "Protein Smoothie",
       "ingredients": ["protein powder", "banana", "almond milk", "peanut butter"],
       "diet": "high-protein",
-      "image": "protein_smoothie.jpg"
+      "image": "protein_smoothie.jpg",
       "recipe": [
         "Blend protein powder, banana, almond milk, and peanut butter until smooth."
       ]
@@ -203,7 +203,7 @@
       "title": "Tuna Salad",
       "ingredients": ["Canned tuna", "mayonnaise", "celery", "lettuce"],
       "diet": "pescatarian",
-      "image": "tuna_salad.jpg"
+      "image": "tuna_salad.jpg",
       "recipe": [
         "Mix canned tuna with mayonnaise and chopped celery.",
         "Serve on lettuce leaves."
@@ -214,7 +214,7 @@
       "title": "Stuffed Bell Peppers",
       "ingredients": ["bell peppers", "quinoa", "black beans"],
       "diet": "vegetarian",
-      "image": "stuffed_bell_peppers.jpg"
+      "image": "stuffed_bell_peppers.jpg",
       "recipe": [
         "Stuff bell peppers with cooked quinoa and black beans.",
         "Bake until tender."
@@ -225,7 +225,7 @@
       "title": "Miso Soup",
       "ingredients": ["miso paste", "tofu", "seaweed", "green onions"],
       "diet": "vegan",
-      "image": "miso_soup.jpg"
+      "image": "miso_soup.jpg",
       "recipe": [
         "Dissolve miso paste in hot water.",
         "Add tofu, seaweed, and green onions."
@@ -236,7 +236,7 @@
       "title": "Chicken Burrito Bowl",
       "ingredients": ["chicken", "rice", "black beans", "salsa"],
       "diet": "high-protein",
-      "image": "chicken_burrito_bowl.jpg"
+      "image": "chicken_burrito_bowl.jpg",
        "recipe": [
          "Cook chicken and rice.",
          "Layer in a bowl with black beans and salsa."
@@ -247,7 +247,7 @@
       "title": "Margherita Pizza",
       "ingredients": ["pizza dough", "tomato sauce", "mozzarella", "basil"],
       "diet": "vegetarian",
-      "image": "margherita_pizza.jpg"
+      "image": "margherita_pizza.jpg",
       "recipe": [
         "Top pizza dough with tomato sauce, mozzarella, and basil.",
         "Bake until crispy."
@@ -267,7 +267,7 @@
       "title": "Sweet Potato Fries",
       "ingredients": ["sweet potatoes", "olive oil", "spices"],
       "diet": "vegan",
-      "image": "sweet_potato_fries.jpg"
+      "image": "sweet_potato_fries.jpg",
       "recipe":  [
         "Slice sweet potatoes.",
         "Toss in olive oil and spices, and bake until crispy."
@@ -278,7 +278,7 @@
       "title": "Eggplant Parmesan",
       "ingredients": ["eggplant", "parmesan", "breadcrumbs", "tomato sauce"],
       "diet": "vegetarian",
-      "image": "eggplant_parmesan.jpg"
+      "image": "eggplant_parmesan.jpg",
       "recipe":   [ 
         "Bread and fry eggplant slices.",
         "Layer with tomato sauce and parmesan, then bake."
@@ -289,7 +289,7 @@
       "title": "Chicken Caesar Salad",
       "ingredients": ["chicken", "romaine lettuce", "caesar dressing"],
       "diet": "non-vegetarian",
-      "image": "chicken_caesar_salad.jpg"
+      "image": "chicken_caesar_salad.jpg",
        "recipe": [
          "Toss grilled chicken with romaine lettuce and Caesar dressing."
        ]  
@@ -299,7 +299,7 @@
       "title": "Banana Oatmeal",
       "ingredients": ["oats", "banana", "almond milk", "honey"],
       "diet": "vegetarian",
-      "image": "banana_oatmeal.jpg"
+      "image": "banana_oatmeal.jpg",
       "recipe": [
         "Cook oats in almond milk.",
         "Top with sliced banana and honey." 
@@ -310,7 +310,7 @@
       "title": "Falafel Wrap",
       "ingredients": ["falafel", "hummus", "lettuce", "wrap bread"],
       "diet": "vegan",
-      "image": "falafel_wrap.jpg"
+      "image": "falafel_wrap.jpg",
       "recipe": [
         "Wrap falafel, hummus, and lettuce in a tortilla.",
         "Serve."
@@ -321,7 +321,7 @@
       "title": "Grilled Shrimp Skewers",
       "ingredients": ["shrimp", "lemon", "garlic"],
       "diet": "pescatarian",
-      "image": "grilled_shrimp_skewers.jpg"
+      "image": "grilled_shrimp_skewers.jpg",
       "recipe": [
         "Skewer shrimp with lemon and garlic.",
         "Grill until cooked."
@@ -332,7 +332,7 @@
       "title": "Peanut Butter Cookies",
       "ingredients": ["peanut butter", "flour", "sugar"],
       "diet": "vegetarian",
-      "image": "peanut_butter_cookies.jpg"
+      "image": "peanut_butter_cookies.jpg",
       "recipe": [
          "Mix peanut butter, flour, and sugar.",
          "Bake until golden."
@@ -343,7 +343,7 @@
       "title": "Coconut Rice",
       "ingredients": ["rice", "coconut milk", "coconut flakes"],
       "diet": "vegan",
-      "image": "coconut_rice.jpg"
+      "image": "coconut_rice.jpg",
       "recipe": [
         "Cook rice in coconut milk.",
         "Top with coconut flakes."
