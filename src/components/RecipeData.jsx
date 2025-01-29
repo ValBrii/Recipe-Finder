@@ -1,7 +1,7 @@
 const [recipes, setRecipes] = useState([]);
 
 useEffect(() => {
-  fetch('api/recipes')
+  fetch('')
     .then(response => response.json())
     .then(data => setRecipes(data));
 }, []);
