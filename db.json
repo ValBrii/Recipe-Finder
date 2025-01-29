@@ -169,8 +169,8 @@
       "title": "Caprese Salad",
       "ingredients": ["mozzarella", "tomatoes", "basil", "balsamic glaze"],
       "diet": "vegetarian",
-      "image": "caprese_salad.jpg"
-      "recipe": [
+      "image": "./images/caprese_salad.jpg",
+      "procedure": [
         "Slice mozzarella and tomatoes.",
         "Layer with basil leaves.",
         "Drizzle with balsamic glaze and serve."
@@ -181,8 +181,8 @@
       "title": "Lentil Soup",
       "ingredients": ["lentils", "carrots", "celery", "spices"],
       "diet": "vegan",
-      "image": "lentil_soup.jpg"
-       "recipe": [
+      "image": "./images/lentil_soup.jpg",
+      "procedure": [
         "Sauté onions and carrots.",
         "Add lentils, spices, and water.",
         "Simmer until lentils are tender and serve."
@@ -193,8 +193,8 @@
       "title": "Protein Smoothie",
       "ingredients": ["protein powder", "banana", "almond milk", "peanut butter"],
       "diet": "high-protein",
-      "image": "protein_smoothie.jpg"
-      "recipe": [
+      "image": "./images/protein_smoothie.jpg",
+      "procedure": [
         "Blend protein powder, banana, almond milk, and peanut butter until smooth."
       ]
     },
@@ -203,8 +203,8 @@
       "title": "Tuna Salad",
       "ingredients": ["Canned tuna", "mayonnaise", "celery", "lettuce"],
       "diet": "pescatarian",
-      "image": "tuna_salad.jpg"
-      "recipe": [
+      "image": "./images/tuna_salad.jpg",
+      "procedure": [
         "Mix canned tuna with mayonnaise and chopped celery.",
         "Serve on lettuce leaves."
       ]
