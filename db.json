@@ -214,8 +214,8 @@
       "title": "Stuffed Bell Peppers",
       "ingredients": ["bell peppers", "quinoa", "black beans"],
       "diet": "vegetarian",
-      "image": "stuffed_bell_peppers.jpg"
-      "recipe": [
+      "image": "./images/stuffed_bell_peppers.jpg",
+      "procedure": [
         "Stuff bell peppers with cooked quinoa and black beans.",
         "Bake until tender."
       ]
@@ -225,8 +225,8 @@
       "title": "Miso Soup",
       "ingredients": ["miso paste", "tofu", "seaweed", "green onions"],
       "diet": "vegan",
-      "image": "miso_soup.jpg"
-      "recipe": [
+      "image": "./images/miso_soup.jpg",
+      "procedure": [
         "Dissolve miso paste in hot water.",
         "Add tofu, seaweed, and green onions."
       ]
@@ -236,8 +236,8 @@
       "title": "Chicken Burrito Bowl",
       "ingredients": ["chicken", "rice", "black beans", "salsa"],
       "diet": "high-protein",
-      "image": "chicken_burrito_bowl.jpg"
-       "recipe": [
+      "image": "./images/chicken_burrito_bowl.jpg",
+      "procedure": [
          "Cook chicken and rice.",
          "Layer in a bowl with black beans and salsa."
        ]  
@@ -246,9 +246,9 @@
       "id": 21,
       "title": "Margherita Pizza",
       "ingredients": ["pizza dough", "tomato sauce", "mozzarella", "basil"],
-      "diet": "vegetarian",
-      "image": "margherita_pizza.jpg"
-      "recipe": [
+      "diet": "vegan",
+      "image": "./images/margherita_pizza.jpg",
+      "procedure": [
         "Top pizza dough with tomato sauce, mozzarella, and basil.",
         "Bake until crispy."
       ]    
@@ -257,7 +257,9 @@
     "id": 22,
     "title": "Zucchini Noodles",
     "ingredients": ["zucchini", "pesto sauce", "cherry tomatoes"],
-    "recipe":  [
+    "diet":"vegan",
+    "image":"./images/zucchini_noodles.jpg",
+    "procedure":  [
        "Spiralize the zucchini into noodles.",
        "Toss with pesto sauce and cherry tomatoes."
       ]
@@ -267,8 +269,8 @@
       "title": "Sweet Potato Fries",
       "ingredients": ["sweet potatoes", "olive oil", "spices"],
       "diet": "vegan",
-      "image": "sweet_potato_fries.jpg"
-      "recipe":  [
+      "image": "./images/sweet_potato_fries.jpg",
+      "procedure":  [
         "Slice sweet potatoes.",
         "Toss in olive oil and spices, and bake until crispy."
       ]  
@@ -277,9 +279,9 @@
       "id": 24,
       "title": "Eggplant Parmesan",
       "ingredients": ["eggplant", "parmesan", "breadcrumbs", "tomato sauce"],
-      "diet": "vegetarian",
-      "image": "eggplant_parmesan.jpg"
-      "recipe":   [ 
+      "diet": "keto",
+      "image": "./images/eggplant_parmesan.jpg",
+      "procedure":   [ 
         "Bread and fry eggplant slices.",
         "Layer with tomato sauce and parmesan, then bake."
       ]   
@@ -289,8 +291,8 @@
       "title": "Chicken Caesar Salad",
       "ingredients": ["chicken", "romaine lettuce", "caesar dressing"],
       "diet": "non-vegetarian",
-      "image": "chicken_caesar_salad.jpg"
-       "recipe": [
+      "image": "./images/chicken_caesar_salad.jpg",
+      "procedure": [
          "Toss grilled chicken with romaine lettuce and Caesar dressing."
        ]  
     },
@@ -299,8 +301,8 @@
       "title": "Banana Oatmeal",
       "ingredients": ["oats", "banana", "almond milk", "honey"],
       "diet": "vegetarian",
-      "image": "banana_oatmeal.jpg"
-      "recipe": [
+      "image": "./images/banana_oatmeal.jpg",
+      "procedure": [
         "Cook oats in almond milk.",
         "Top with sliced banana and honey." 
       ]
