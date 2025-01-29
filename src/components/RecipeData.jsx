@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-
+import { useParams } from "react-router-dom";
 
 function RecipeDetail() {
- 
+  const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/recipes/${id}`)
+    fetch(`http://localhost:3001/recipes/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch recipe");
@@ -24,7 +24,7 @@ function RecipeDetail() {
   return (
     <div>
       <h1>{recipe.title}</h1>
-      <img src={recipe.image} alt={recipe.title}  />
+      <img src={recipe.image} alt={recipe.title} width="250" />
       <h3>Ingredients:</h3>
       <ul>
         {recipe.ingredients.map((ingredient, index) => (
