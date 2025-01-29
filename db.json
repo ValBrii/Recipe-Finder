@@ -248,13 +248,19 @@
       "ingredients": ["pizza dough", "tomato sauce", "mozzarella", "basil"],
       "diet": "vegetarian",
       "image": "margherita_pizza.jpg"
-    },
-    {
-      "id": 22,
-      "title": "Zucchini Noodles",
-      "ingredients": ["zucchini", "pesto sauce", "cherry tomatoes"],
-      "diet": "keto",
-      "image": "zucchini_noodles.jpg"
+      "recipe": [
+        "Top pizza dough with tomato sauce, mozzarella, and basil.",
+        "Bake until crispy."
+      ]    
+  },
+  {
+    "id": 22,
+    "title": "Zucchini Noodles",
+    "ingredients": ["zucchini", "pesto sauce", "cherry tomatoes"],
+    "recipe":  [
+       "Spiralize the zucchini into noodles.",
+       "Toss with pesto sauce and cherry tomatoes."
+      ]
     },
     {
       "id": 23,
@@ -262,6 +268,10 @@
       "ingredients": ["sweet potatoes", "olive oil", "spices"],
       "diet": "vegan",
       "image": "sweet_potato_fries.jpg"
+      "recipe":  [
+        "Slice sweet potatoes.",
+        "Toss in olive oil and spices, and bake until crispy."
+      ]  
     },
     {
       "id": 24,
@@ -269,6 +279,10 @@
       "ingredients": ["eggplant", "parmesan", "breadcrumbs", "tomato sauce"],
       "diet": "vegetarian",
       "image": "eggplant_parmesan.jpg"
+      "recipe":   [ 
+        "Bread and fry eggplant slices.",
+        "Layer with tomato sauce and parmesan, then bake."
+      ]   
     },
     {
       "id": 25,
@@ -276,6 +290,9 @@
       "ingredients": ["chicken", "romaine lettuce", "caesar dressing"],
       "diet": "non-vegetarian",
       "image": "chicken_caesar_salad.jpg"
+       "recipe": [
+         "Toss grilled chicken with romaine lettuce and Caesar dressing."
+       ]  
     },
     {
       "id": 26,
@@ -283,6 +300,10 @@
       "ingredients": ["oats", "banana", "almond milk", "honey"],
       "diet": "vegetarian",
       "image": "banana_oatmeal.jpg"
+      "recipe": [
+        "Cook oats in almond milk.",
+        "Top with sliced banana and honey." 
+      ]
     },
     {
       "id": 27,
@@ -290,6 +311,10 @@
       "ingredients": ["falafel", "hummus", "lettuce", "wrap bread"],
       "diet": "vegan",
       "image": "falafel_wrap.jpg"
+      "recipe": [
+        "Wrap falafel, hummus, and lettuce in a tortilla.",
+        "Serve."
+      ]
     },
     {
       "id": 28,
@@ -297,6 +322,10 @@
       "ingredients": ["shrimp", "lemon", "garlic"],
       "diet": "pescatarian",
       "image": "grilled_shrimp_skewers.jpg"
+      "recipe": [
+        "Skewer shrimp with lemon and garlic.",
+        "Grill until cooked."
+      ]
     },
     {
       "id": 29,
@@ -304,6 +333,10 @@
       "ingredients": ["peanut butter", "flour", "sugar"],
       "diet": "vegetarian",
       "image": "peanut_butter_cookies.jpg"
+      "recipe": [
+         "Mix peanut butter, flour, and sugar.",
+         "Bake until golden."
+      ]
     },
     {
       "id": 30,
@@ -311,6 +344,10 @@
       "ingredients": ["rice", "coconut milk", "coconut flakes"],
       "diet": "vegan",
       "image": "coconut_rice.jpg"
+      "recipe": [
+        "Cook rice in coconut milk.",
+        "Top with coconut flakes."
+      ]
     }
   ]
 }
