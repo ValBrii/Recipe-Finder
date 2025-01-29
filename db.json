@@ -310,10 +310,10 @@
     {
       "id": 27,
       "title": "Falafel Wrap",
-      "ingredients": ["falafel", "hummus", "lettuce", "wrap bread"],
+      "ingredients": ["falafel", "hummus","cherry tomatoes", "lettuce", "wrap bread"],
       "diet": "vegan",
-      "image": "falafel_wrap.jpg"
-      "recipe": [
+      "image": "./images/falafel_wrap.jpg",
+      "procedure": [
         "Wrap falafel, hummus, and lettuce in a tortilla.",
         "Serve."
       ]
@@ -323,8 +323,8 @@
       "title": "Grilled Shrimp Skewers",
       "ingredients": ["shrimp", "lemon", "garlic"],
       "diet": "pescatarian",
-      "image": "grilled_shrimp_skewers.jpg"
-      "recipe": [
+      "image": "./images/grilled_shrimp_skewers.jpg",
+      "procedure": [
         "Skewer shrimp with lemon and garlic.",
         "Grill until cooked."
       ]
@@ -334,8 +334,8 @@
       "title": "Peanut Butter Cookies",
       "ingredients": ["peanut butter", "flour", "sugar"],
       "diet": "vegetarian",
-      "image": "peanut_butter_cookies.jpg"
-      "recipe": [
+      "image": "./images/peanut_butter_cookies.jpg",
+      "procedure": [
          "Mix peanut butter, flour, and sugar.",
          "Bake until golden."
       ]
@@ -345,8 +345,8 @@
       "title": "Coconut Rice",
       "ingredients": ["rice", "coconut milk", "coconut flakes"],
       "diet": "vegan",
-      "image": "coconut_rice.jpg"
-      "recipe": [
+      "image": "./images/coconut_rice.jpg",
+      "procedure": [
         "Cook rice in coconut milk.",
         "Top with coconut flakes."
       ]
