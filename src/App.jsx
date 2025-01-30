@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import SearchForm from './components/SearchForm';
+import RecipeList from './components/RecipeList';
+import RecipeDetail from './components/RecipeDetail';
+import FilterPanel from './components/FilterPanel';
+import Footer from './components/Footer';
+const App = () => {
+  const [recipes, setRecipes] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filter, setFilter] = useState('');
+  const [loading, setLoading] = useState(false);
+  const fetchRecipes = () => {
+    setLoading(true);
+    let url = `http://localhost:3001/recipes?ingredient=${searchTerm}&diet=${filter}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setRecipes(data);
+        setLoading(false);
+      });
+    };
+    useEffect(() => {
+      fetchRecipes();
+    }, 
+    [searchTerm, filter]);
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
+    return (
+      <Router>
+        <Navbar />
+        <div className="app">
+          {loading && <div className="spinner"></div>}
+          <Routes>
+          <Route
+            path="/search"
+            element={<RecipeList recipes={recipes} />}
+          />
+          <Route
+            path="/recipe/:id"
+            element={<RecipeDetail />}
+          />
+          <Route
+            path="/filters"
+            element={<FilterPanel onFilterChange={setFilter} />}
+          />
+          </Routes>
+          </div>
+      </Router>
+    );      
+};
 export default App
+

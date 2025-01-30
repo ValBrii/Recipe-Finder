@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+
 
 function RecipeDetail() {
   const { id } = useParams();
@@ -37,3 +36,4 @@ function RecipeDetail() {
 }
 
 export default RecipeDetail;
+
