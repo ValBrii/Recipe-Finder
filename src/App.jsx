@@ -1,53 +1,58 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import SearchForm from './components/SearchForm';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
+import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
-import Footer from './components/Footer';
-const App = () => {
-  const [recipes, setRecipes] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filter, setFilter] = useState('');
-  const [loading, setLoading] = useState(false);
-  const fetchRecipes = () => {
-    setLoading(true);
-    let url = `http://localhost:3001/recipes?ingredient=${searchTerm}&diet=${filter}`;
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setRecipes(data);
-        setLoading(false);
-      });
-    };
-    useEffect(() => {
-      fetchRecipes();
-    }, 
-    [searchTerm, filter]);
 
-    return (
-      <Router>
+function App() {
+  const [recipes, setRecipes] = useState([]);
+  const [searchPerformed, setSearchPerformed] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSearch = (data) => {
+    setRecipes(data);
+    setSearchPerformed(true);
+  };
+
+  const handleFilter = (filteredData) => {
+    setRecipes(filteredData);
+    setSearchPerformed(true);
+  };
+
+  return (
+    <Router>
+      <div className="App">
         <Navbar />
-        <div className="app">
-          {loading && <div className="spinner"></div>}
-          <Routes>
+        <Routes>
           <Route
             path="/search"
-            element={<RecipeList recipes={recipes} />}
+            element={
+              <>
+                <SearchForm onSearch={handleSearch} setLoading={setLoading} />
+                <RecipeList recipes={recipes} searchPerformed={searchPerformed} loading={loading} />
+              </>
+            }
           />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
           <Route
-            path="/recipe/:id"
-            element={<RecipeDetail />}
+            path="/filter"
+            element={
+              <>
+                <FilterPanel onFilter={handleFilter} setLoading={setLoading} />
+                <RecipeList recipes={recipes} searchPerformed={searchPerformed} loading={loading} />
+              </>
+            }
           />
-          <Route
-            path="/filters"
-            element={<FilterPanel onFilterChange={setFilter} />}
-          />
-          </Routes>
-          </div>
-      </Router>
-    );      
-};
-export default App
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
 
