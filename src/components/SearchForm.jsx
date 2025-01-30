@@ -39,7 +39,7 @@ function SearchForm({ onSearch, setLoading }) {
 
   return (
     <div className="search-form">
-      <input
+      <
         type="text"
         value={searchIngredient}
         onChange={(e) => setSearchIngredient(e.target.value)}
