@@ -19,5 +19,11 @@ const App = () => {
       .then((data) => {
         setRecipes(data);
         setLoading(false);
-      })};
+      });
+    };
+    useEffect(() => {
+      fetchRecipes();
+    }, 
+    [searchTerm, filter]);
+    
 };
