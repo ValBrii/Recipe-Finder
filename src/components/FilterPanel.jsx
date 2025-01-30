@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/FilterPanel.css';
 
 function FilterPanel() {
   const [recipes, setRecipes] = useState([]);
@@ -41,7 +42,7 @@ function FilterPanel() {
   });
 
   return (
-    <div>
+    <div className='filter-panel'>
       <h1>Filter Recipes</h1>
 
       
