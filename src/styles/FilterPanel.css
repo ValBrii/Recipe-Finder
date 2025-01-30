@@ -1,0 +1,73 @@
+/* General Styles */
+.filter-panel {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .filter-panel h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Diet Dropdown */
+  .filter-panel select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Ingredients Filter Input */
+  .filter-panel input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Recipe List */
+  .filter-panel ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .filter-panel li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .filter-panel li strong {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .filter-panel li span {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  /* No results found message */
+  .filter-panel li.no-results {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }  
