@@ -25,5 +25,27 @@ const App = () => {
       fetchRecipes();
     }, 
     [searchTerm, filter]);
-    
+
+    return (
+      <Router>
+        <Navbar />
+        <div className="app">
+          {loading && <div className="spinner"></div>}
+          <Routes>
+          <Route
+            path="/search"
+            element={<RecipeList recipes={recipes} />}
+          />
+          <Route
+            path="/recipe/:id"
+            element={<RecipeDetail />}
+          />
+          <Route
+            path="/filters"
+            element={<FilterPanel onFilterChange={setFilter} />}
+          />
+          </Routes>
+          </div>
+      </Router>
+    );      
 };
