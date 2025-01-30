@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import '../styles/FilterPanel.css';
 
@@ -77,3 +76,4 @@ function FilterPanel() {
 }
 
 export default FilterPanel;     
+
