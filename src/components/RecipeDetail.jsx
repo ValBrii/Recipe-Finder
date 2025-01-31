@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-function RecipeData() {
+function RecipeDetail() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -42,4 +42,4 @@ function RecipeData() {
   );
 }
 
-export default RecipeData;
+export default RecipeDetail;
