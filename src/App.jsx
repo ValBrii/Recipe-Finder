@@ -5,6 +5,7 @@ import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
 import Navbar from './components/Navbar';
 import FilterPanel from './components/FilterPanel';
+import Footer from './components/Footer';
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <p id="header">RECIPE FINDER APP</p>
         <Navbar />
         <Routes>
           <Route
@@ -46,6 +48,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
