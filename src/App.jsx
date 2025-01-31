@@ -26,8 +26,8 @@ function App() {
     <Router>
       <div className="App">
         <p id="header">RECIPE FINDER APP</p>
-        <Navbar />
-        <Routes>
+         <Navbar />
+          <Routes>
           <Route
             path="/search"
             element={
