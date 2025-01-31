@@ -1,5 +1,5 @@
-{
-    "recipes": [
+    {
+     "recipes": [
       {
         "id": 1,
         "title": "Vegan Pancakes",
@@ -40,19 +40,7 @@
           "Serve immediately with optional toppings like chili flakes or cherry tomatoes."
         ]
       },
-      {
-        "id": 4,
-        "title": "Beef Stir Fry",
-        "ingredients": ["beef strips", "soy sauce", "bell peppers"],
-        "diet": "high-protein",
-        "image": "./public/images/beef_stir_fry.jpg",
-        "procedure": [
-          "Heat a pan and cook beef strips until browned.",
-          "Add soy sauce and sliced bell peppers.",
-          "Stir-fry for a few minutes until vegetables are tender.",
-          "Serve hot with rice or noodles."
-        ]
-      },
+      
       {
         "id": 5,
         "title": "Berry Smoothie",
