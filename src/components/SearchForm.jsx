@@ -50,7 +50,7 @@ function SearchForm({ onSearch, setLoading }) {
         type="text"
         value={searchTitle}
         onChange={(e) => setSearchTitle(e.target.value)}
-        placeholder="Search by meal type (e.g., Vegan Pancakes,Avocado Toast)"
+        placeholder="Search by meal type (e.g., Vegan Pancakes)"
       />
       <button onClick={() => handleSearch('title')}>Search</button>
     </div>
