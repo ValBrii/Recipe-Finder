@@ -1,39 +1,45 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-function RecipeDetail() {
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+function RecipeData() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
-  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch(`http://localhost:3001/recipes/${id}`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to fetch recipe");
-        }
-        return response.json();
+      .then((res) => res.json())
+      .then((data) => {
+        setRecipe(data);
+        setLoading(false);
       })
-      .then((data) => setRecipe(data))
-      .catch((error) => setError(error.message));
+      .catch((error) => {
+        console.error("Error fetching recipe:", error);
+        setLoading(false);
+      });
   }, [id]);
 
-  if (error) return <p>Error: {error}</p>;
-  if (!recipe) return <p>Loading recipe...</p>;
+  if (loading) return <p>Loading...</p>;
+  if (!recipe) return <p>Recipe Not Found</p>;
 
   return (
-    <div>
-      <h1>{recipe.title}</h1>
-      <img src={recipe.image} alt={recipe.title} width="250" />
-      <h3>Ingredients:</h3>
-      <ul>
-        {recipe.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
+    <div className="recipe-details">
+      <h2>{recipe.title}</h2>
+      <h3>Diet Type: {recipe.diet}</h3>
+      <h4>INGREDIENTS:</h4>
+      <ul class="list">
+        {recipe.ingredients.map((ing, index) => (
+          <li key={index}>{ing}</li>
         ))}
       </ul>
-      <p>Diet Type: {recipe.diet}</p>
+      <h4>RECIPE:</h4>
+      <ol class="list">
+        {recipe.procedure.map((step, index) => (
+          <li key={index}>{step}</li>
+        ))}
+      </ol>
     </div>
   );
 }
 
-export default RecipeDetail;
-
+export default RecipeData;
