@@ -50,7 +50,7 @@
     color: green;
     text-align: center;
   }
-  h3,h4{
+  h3,h4,h5{
     color: green;
     text-align: center;
     font-size: large;
@@ -77,6 +77,36 @@
     color: green;
     margin-top: 150px;
 }
+.recipe-detail {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: green;
+}
+.recipe-image {
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.recipe-info {
+  text-align: left;
+}
+
+.ingredient-list,
+.procedure-list {
+  padding-left: 20px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #ff6347;
+  font-weight: bold;
+}
+
 
 
   
