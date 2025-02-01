@@ -18,8 +18,8 @@ body{
 .search-form {
     display: flex;
     justify-content: left;
-    width: 70%;
-    max-width: 70%;
+    width: 90%;
+    max-width: 90%;
     gap: 50px;
     border-radius: 10px;
     margin-top: 20px;
