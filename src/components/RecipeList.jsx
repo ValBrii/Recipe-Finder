@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function RecipeList({ recipes, searchPerformed, loading }) {
   return (
-    <>
+    <div className='recipe-container'>
       {loading ? (
         <p className='loading'>Loading...</p>
       ) : searchPerformed && recipes.length === 0 ? (
@@ -19,7 +19,7 @@ function RecipeList({ recipes, searchPerformed, loading }) {
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 }
 
