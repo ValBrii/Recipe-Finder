@@ -1,149 +1,60 @@
-body{
-  background-color: #ccc;
-}
-.navbar{
-  display: flex;
-  justify-content: center;
-  gap: 30%;
-  font-size: large;
-  background-color: black;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: -10px;
-  margin-bottom: 2px;
-  padding: 20px;
-  cursor: default;
-}
+import React, { useState } from 'react';
 
-.search-form {
-    display: flex;
-    justify-content: left;
-    width: 70%;
-    max-width: 70%;
-    gap: 50px;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-  }
+function SearchForm({ onSearch, setLoading }) {
+  const [searchIngredient, setSearchIngredient] = useState('');
+  const [searchTitle, setSearchTitle] = useState('');
+
+  const handleSearch = async (type) => {
+    setLoading(true);
+    let url = 'http://localhost:3001/recipes';
+
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      setLoading(false);
+
+      if (type === 'ingredient' && searchIngredient.trim()) {
   
-  .search-form input {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px 30px;
-    font-size: small;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    transition: border-color 1s ease;
-  }
-  
-  .search-form input:focus {
-    border-color: rgb(0,71,171);
-    outline: none;
-  }
-  
-  .search-form button {
-    padding: 3px,6px;
-    color: white;
-    background-color: rgb(0,71,171);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .search-form button:hover {
-    background-color: rgb(1, 40, 99);
-    color: #ccc;
-  }
- 
-  .recipe-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    gap: 20px;
-  }
-  .recipe-list img{
-    width: 20%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-bottom: 1px;
-  }
-  
+        const filteredData = data.filter((recipe) =>
+          recipe.ingredients.some((ing) => 
+            ing.toLowerCase() === searchIngredient.toLowerCase()
+          )
+        );
 
-  h3,h4,h5{
-    color: rgb(0,71,171);
-    text-align: center;
-    font-size: large;
-    margin-bottom: 5px;
-  }
-  .list{
-    display: grid;
-    justify-content: center;
-  }
-  #alert{
-    color: rgb(234, 22, 22);
-    font-size: large;
-    font-weight: 800;
-  }
-  .filter{
-    margin: 20px;
-}
-.filter select{
-  padding: 3px;
-  border-radius: 4px;
-  color: rgb(0,71,171);
-}
-.filter option{
-  color: rgb(0,71,171);
+        onSearch(filteredData.length > 0 ? filteredData : []);
+      } else if (type === 'title' && searchTitle.trim()) {
+      
+        const filteredData = data.filter((recipe) =>
+          recipe.title.toLowerCase() === searchTitle.toLowerCase()
+        );
+        onSearch(filteredData.length > 0 ? filteredData : []);
+      }
+    } catch (error) {
+      console.error('Error fetching recipes:', error);
+      setLoading(false);
+      onSearch([]);
+    }
+  };
+
+  return (
+    <div className="search-form">
+      <input
+        type="text"
+        value={searchIngredient}
+        onChange={(e) => setSearchIngredient(e.target.value)}
+        placeholder="Search ingredient (e.g.avocado, banana)"
+      />
+      <button onClick={() => handleSearch('ingredient')}>Search</button>
+
+      <input
+        type="text"
+        value={searchTitle}
+        onChange={(e) => setSearchTitle(e.target.value)}
+        placeholder="Search meal name (e.g.avocado toast)"
+      />
+      <button onClick={() => handleSearch('title')}>Search</button>
+    </div>
+  );
 }
 
-.recipe-detail {
-  padding: 20px;
-  display: flex;
-  justify-content: left;
-}
-.recipe-detail img{
-  width: 25%;
-  height: auto;
-}
-.recipe-detail p{
-  color: rgb(0,71,171);
-  text-align: center;
-  font-size: x-large;
-  margin-bottom: 5px;
-  font-weight: 900;
-}
-.recipe-image {
-  width: 40%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  margin-right: 50px;
-}
-
-.loading{
-  color: rgb(80,255,0);
-  font-size: x-large;
-  font-weight: 400;
-
-}
-.error {
-  text-align: center;
-  font-size: 18px;
-  color: #ff6347;
-  font-weight: bold;
-}
-footer{
-  color: white;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  margin-top: 500px;
-  margin-left: -30px;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-  
-
-
-
-  
- 
+export default SearchForm;
