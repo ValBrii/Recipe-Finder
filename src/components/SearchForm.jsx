@@ -42,7 +42,7 @@ function SearchForm({ onSearch, setLoading }) {
         type="text"
         value={searchIngredient}
         onChange={(e) => setSearchIngredient(e.target.value)}
-        placeholder="Search ingredient (e.g.avocado, banana)"
+        placeholder="Search ingredient(e.g.avocado)"
       />
       <button onClick={() => handleSearch('ingredient')}>Search</button>
 
@@ -50,7 +50,7 @@ function SearchForm({ onSearch, setLoading }) {
         type="text"
         value={searchTitle}
         onChange={(e) => setSearchTitle(e.target.value)}
-        placeholder="Search meal name (e.g.avocado toast)"
+        placeholder="Search meal(e.g.avocado toast)"
       />
       <button onClick={() => handleSearch('title')}>Search</button>
     </div>
