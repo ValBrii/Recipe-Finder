@@ -7,25 +7,25 @@ function RecipeDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const numericId = Number(id); // Convert ID to a number to match db.json format
+    const numericId = Number(id); 
 
     fetch(`http://localhost:3001/recipes/${numericId}`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error("Recipe not found");
+          throw new Error("Meal not found!");
         }
         return res.json();
       })
       .then((data) => {
         if (!data || Object.keys(data).length === 0) {
-          throw new Error("Recipe not found");
+          throw new Error("Meal not found!");
         }
         setRecipe(data);
         setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching recipe:", error);
-        setRecipe(null); // Ensure the state is reset on error
+        setRecipe(null);
         setLoading(false);
       });
   }, [id]);
@@ -35,21 +35,16 @@ function RecipeDetail() {
 
   return (
     <section className="recipe-detail">
-      <h2>{recipe.title}</h2>
-
-      {/* Display Recipe Image */}
       <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-
-      <article className="recipe-info">
+       <article className="recipe-info">
+        <p>Meal Name:{recipe.title}</p>
         <h3>Diet Type: {recipe.diet}</h3>
-
         <h4>INGREDIENTS:</h4>
-        <ul className="list">
+        <ol className="list">
           {recipe.ingredients.map((ing, index) => (
             <li key={index}>{ing}</li>
           ))}
-        </ul>
-
+        </ol>
         <h4>RECIPE:</h4>
         <ol className="list">
           {recipe.procedure.map((step, index) => (
