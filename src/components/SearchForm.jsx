@@ -14,7 +14,7 @@ function SearchForm({ onSearch, setLoading }) {
       setLoading(false);
 
       if (type === 'ingredient' && searchIngredient.trim()) {
-        // Checking the ingredients array
+  
         const filteredData = data.filter((recipe) =>
           recipe.ingredients.some((ing) => 
             ing.toLowerCase() === searchIngredient.toLowerCase()
@@ -23,7 +23,7 @@ function SearchForm({ onSearch, setLoading }) {
 
         onSearch(filteredData.length > 0 ? filteredData : []);
       } else if (type === 'title' && searchTitle.trim()) {
-        // Title search is already working, so no change needed
+      
         const filteredData = data.filter((recipe) =>
           recipe.title.toLowerCase() === searchTitle.toLowerCase()
         );
@@ -42,7 +42,7 @@ function SearchForm({ onSearch, setLoading }) {
         type="text"
         value={searchIngredient}
         onChange={(e) => setSearchIngredient(e.target.value)}
-        placeholder="Search by ingredient (e.g., flour, banana)"
+        placeholder="Search ingredient (e.g.avocado, banana)"
       />
       <button onClick={() => handleSearch('ingredient')}>Search</button>
 
@@ -50,7 +50,7 @@ function SearchForm({ onSearch, setLoading }) {
         type="text"
         value={searchTitle}
         onChange={(e) => setSearchTitle(e.target.value)}
-        placeholder="Search by meal type (e.g., Vegan Pancakes)"
+        placeholder="Search meal name (e.g.avocado toast)"
       />
       <button onClick={() => handleSearch('title')}>Search</button>
     </div>
