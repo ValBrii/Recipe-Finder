@@ -57,8 +57,8 @@ body{
  
   .recipe-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-    gap: 5%;
+    grid-template-columns: repeat (auto-fit,minmax (500px,1 fr));
+    gap: 20px;
   }
   .recipe-list img{
     width: 20%;
