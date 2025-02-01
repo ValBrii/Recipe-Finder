@@ -25,7 +25,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <p id="header">RECIPE FINDER APP</p>
          <Navbar />
           <Routes>
           <Route
