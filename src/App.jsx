@@ -26,6 +26,12 @@ function App() {
     <Router>
       <div className="App">
          <Navbar />
+         <p id="welcome">
+    Welcome to Incroyable, your ultimate recipe finder! 
+    Search for mouthwatering recipes by ingredient or meal type,
+     and tailor your results with dietary preferences. 
+    Discover, cook, and savor incredible dishes in just a few clicks. Bon appétit !
+         </p>
           <Routes>
           <Route
             path="/search"
