@@ -57,7 +57,7 @@ body{
  
   .recipe-list{
     display: grid;
-    grid-template-columns: repeat (auto-fit,minmax (500px,1 fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     gap: 20px;
   }
   .recipe-list img{
@@ -67,11 +67,7 @@ body{
     margin-top: 15px;
     margin-bottom: 1px;
   }
-  .recipe-list p{
-    color: rgb(0,71,171);
-    font-size: large;
-    font-weight: 600;
-  }
+  
 
   h3,h4,h5{
     color: rgb(0,71,171);
