@@ -15,10 +15,9 @@ function FilterPanel({ onFilter, setLoading }) {
       const data = await res.json();
       setLoading(false);
 
-      // Filter recipes by diet
       const filteredData = selectedDiet
         ? data.filter((recipe) => recipe.diet.toLowerCase() === selectedDiet.toLowerCase())
-        : data; // Show all recipes if no diet is selected
+        : data; 
 
       onFilter(filteredData);
     } catch (error) {
@@ -29,14 +28,14 @@ function FilterPanel({ onFilter, setLoading }) {
   };
 
   return (
-    <div id="filter">
+    <div className="filter">
       <select value={diet} onChange={handleFilterChange}>
         <option value="keto">Keto</option>
+        <option value="vegan">Vegan</option>
         <option value="vegetarian">Vegetarian</option>
         <option value="high-protein">High-Protein</option>
         <option value="non-vegetarian">Non-Vegetarian</option>
         <option value="pescatarian">Pescatarian</option>
-        <option value="vegan">Vegan</option>
       </select>
     </div>
   );
